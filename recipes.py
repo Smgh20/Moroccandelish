@@ -6,7 +6,7 @@ from PIL import Image
 import emoji
 
 # Load recipe data
-recipes = pd.read_csv(r'E:\reciperecom\recipes.csv')
+recipes = pd.read_csv('recipes.csv')
 
 # Preprocess d  ata
 recipes['ingredients'] = recipes['ingredients'].fillna('')  # Fill missing values with empty string
@@ -97,7 +97,7 @@ def main():
         """,
         unsafe_allow_html=True
          )
-    add_bg_from_local(r'E:\reciperecom\Background.jpg')  
+    add_bg_from_local('Background.jpg')  
 
     
     # Display text
