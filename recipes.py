@@ -6,7 +6,7 @@ from PIL import Image
 import emoji
 
 # Load recipe data
-recipes = pd.read_csv('recipes.csv')
+recipes = pd.read_csv("Data/recipes.csv")
 
 # Preprocess d  ata
 recipes['ingredients'] = recipes['ingredients'].fillna('')  # Fill missing values with empty string
@@ -138,3 +138,4 @@ We have more than 5000 recipes to save you :wink:. try it yourself!
         
 if __name__ == "__main__":
     main()
+
